@@ -37,6 +37,12 @@ public class SaisonTest {
 	}
 	
 	@Test
+	public void testValueOfLibelleWrongLibelle() {
+		String testNominal = "Hier";
+		assertNull(Saison.valueOfLibelle(testNominal));
+	}
+	
+	@Test
 	public void testValueOfLibelleNull() {
 		assertNull(Saison.valueOfLibelle(null));
 	}
